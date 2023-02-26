@@ -41,27 +41,22 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 export default ({
   subheading = "FAQS",
   heading = "You have Questions ?",
-  description = "And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  description = "And we have got answers to all of them. ",
   faqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "Are we ISO 27001 certified ?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+        "Yes! We are ISO 27001 certified. We have been certified by the British Standards Institution (BSI) for our Information Security Management System (ISMS)."
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
+      question: "Can you use Amen Bank's card for international payments?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Of Course you can! You can use your Amen Bank card for international payments. You can also use your Amen Bank card to withdraw cash from any ATM in the world."
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "Can I apply online for a card ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    {
-      question: "Where can I reach you for support ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Yes, these days you can do anything from home, and YES! including applying for a credit card."
     }
   ]
 }) => {

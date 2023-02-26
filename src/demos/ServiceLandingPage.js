@@ -24,35 +24,6 @@ export default () => {
       <PopCookies />
       <Hero />
       <FeatureStats />
-      <Features
-        heading={
-          <>
-            Amazing <HighlightedText>Features</HighlightedText>
-          </>
-        }
-      />
-      <MainFeature
-        heading={
-          <>
-            Cloud built by and for{" "}
-            <HighlightedText>Professionals</HighlightedText>
-          </>
-        }
-      />
-      <Testimonial
-        heading={
-          <>
-            Our Clients <HighlightedText>Love Us</HighlightedText>
-          </>
-        }
-      />
-      <Pricing
-        heading={
-          <>
-            Flexible <HighlightedText>Plans</HighlightedText>
-          </>
-        }
-      />
       <FAQ
         heading={
           <>
@@ -60,15 +31,6 @@ export default () => {
           </>
         }
       />
-      <Blog
-        subheading="Blog"
-        heading={
-          <>
-            We love <HighlightedText>Writing</HighlightedText>
-          </>
-        }
-      />
-
       <ContactUsForm />
       <Footer />
     </AnimationRevealPage>

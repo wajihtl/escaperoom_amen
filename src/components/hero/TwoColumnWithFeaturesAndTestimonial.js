@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { css } from "styled-components/macro"; //eslint-disable-line
+import ctoAvatar from "../../images/ctoamen.jpeg";
 import HeaderBase, {
   NavLinks,
   NavLink,
@@ -17,8 +17,11 @@ import {
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as QuotesLeftIconBase } from "images/quotes-l.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg";
+import { Avatar } from "@mui/material";
 
-const Header = tw(HeaderBase)`max-w-none`;
+const Header = tw(
+  HeaderBase
+)`flex flex-row max-w-none justify-between items-center`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;
 const Column = tw.div``;
 const TextColumn = tw(
@@ -47,29 +50,24 @@ const ImageDecoratorBlob = styled(SvgDecoratorBlob1)`
 const Testimonial = tw.div`max-w-sm rounded-b md:rounded-none relative sm:absolute bottom-0 inset-x-0 z-20 px-8 py-6 sm:px-10 sm:py-8 bg-primary-900 text-gray-400 font-medium transform md:-translate-x-32 text-sm leading-relaxed md:-mr-16 xl:mr-0`;
 const QuotesLeftIcon = tw(
   QuotesLeftIconBase
-)`w-16 h-16 md:w-12 md:h-12 absolute top-0 left-0 text-gray-100 md:text-red-500 transform translate-x-1 md:-translate-x-1/2 md:-translate-y-5 opacity-10 md:opacity-100`;
+)`w-16 h-16 md:w-12 md:h-12 absolute top-0 left-0 text-gray-100 md:text-gray-400 transform translate-x-1 md:-translate-x-1/2 md:-translate-y-5 opacity-10 md:opacity-100`;
 const Quote = tw.blockquote``;
 const CustomerName = tw.p`mt-4 font-bold`;
 const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`;
 
 export default ({
-  heading = "Better, Faster and Cheaper Cloud.",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  heading = " Le Partenaire de votre Succès.",
+  description = "RÉUSSIR VOTRE DÉVELOPPEMENT ET PÉRENNISER VOS PROJETS.",
   imageSrc = "https://www.amenbank.com.tn/interface/corps/images/textes/20170218083703_IM__values.jpg",
   imageDecoratorBlob = true,
   primaryButtonUrl = "https://google.com",
   primaryButtonText = "Get Started",
   buttonRounded = true,
-  features = [
-    "Available in 7 Locations",
-    "Premium Internet Backbone",
-    "99.99% Uptime SLA",
-  ],
+  features = ["24H/7", "100% Secure"],
   testimonial = {
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    customerName: "Charlotte Hale",
-    customerCompany: "Delos Inc.",
+      "Grâce à notre expertise, nous vous offrons un large choix de solutions, de produits et de services bancaires adaptés à chacun de vos besoins, tout en vous accompagnant pour réussir votre stratégie de développement et pérenniser vos projets.",
+    customerCompany: "Amen Bank",
   },
 }) => {
   const buttonRoundedCss = buttonRounded && tw`rounded-full`;
@@ -77,22 +75,23 @@ export default ({
     <NavLinks key={1}>
       <NavLink href="/#">About</NavLink>
       <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Pricing</NavLink>
+      <NavLink href="/#" about="blank">Pricing</NavLink>
       <NavLink href="/#">Contact Us</NavLink>
       <NavLink href="/#">Testimonials</NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <NavLink href="/#" tw="lg:ml-12!">
+      <Avatar src={ctoAvatar} />
+      <NavLink href="/#" tw="lg:ml-12!" style={{ display: "none" }}>
         Login
       </NavLink>
-      <PrimaryLink css={buttonRoundedCss} href="/#">
+      <PrimaryLink css={buttonRoundedCss} href="/#" style={{ display: "none" }}>
         Sign Up
       </PrimaryLink>
     </NavLinks>,
   ];
   return (
     <>
-      <Header links={navLinks} />
+      <Header links={navLinks} className="flex flex-row" />
       <Container>
         <ContentWithVerticalPadding>
           <Row>
