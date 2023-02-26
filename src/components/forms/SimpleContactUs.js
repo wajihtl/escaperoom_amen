@@ -108,6 +108,11 @@ export default () => {
         </FormContainer>
       </Content>
       {show && <ReplyMessage setshow={setshow} type={type} />}
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=1u-ZSpMjBpgS9T2vJiQYurch5m4fxnfY&ehbc=2E312F"
+        width="100%"
+        height="550"
+      ></iframe>
     </Container>
   );
 };

@@ -19,6 +19,7 @@ import ContactUsForm from "components/forms/SimpleContactUs.js";
 const HighlightedText = tw.span`text-primary-500`;
 
 export default () => {
+  //AMEN
   return (
     <AnimationRevealPage>
       <PopCookies />
