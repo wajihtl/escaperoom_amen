@@ -35,7 +35,7 @@ const Description = tw(
 )`mt-4 lg:text-base text-gray-700 max-w-lg`;
 const PrimaryButton = tw(
   PrimaryButtonBase
-)`mt-8 inline-block w-56 tracking-wide text-center py-5`;
+)`mt-8 inline-block w-56 tracking-wide text-center py-5 bg-[#00a152]`;
 const FeatureList = tw.ul`mt-12 leading-loose`;
 const Feature = tw.li`flex items-center`;
 const FeatureIcon = tw(CheckboxIcon)`w-5 h-5 text-primary-500`;
@@ -104,7 +104,7 @@ export default ({
                 as="a"
                 href={primaryButtonUrl}
                 css={buttonRoundedCss}
-                style={{ backgroundColor: "lightgreen" }}
+                style={{ backgroundColor: "#00a152" }}
               >
                 {primaryButtonText}
               </PrimaryButton>
